@@ -24,6 +24,7 @@ function saveFeedbackForm() {
 
     });
     jQuery("#registration").find("label").removeClass("ibm-required");
+    jQuery("#registration").find("textarea").removeClass("errfeedbackVal");
     if (emailVal == "") {
         jQuery(".errEmailName").addClass("ibm-required");
     } else {
@@ -44,10 +45,10 @@ function saveFeedbackForm() {
 
     } else {
     	if (feedBackVal == "") {
-            jQuery(".errfeedbackVal").addClass("ibm-required");
+            jQuery("#feedbackVal").addClass("errfeedbackVal");
         } else {
 
-            jQuery(".errfeedbackVal").removeClass("ibm-required");
+            jQuery("#feedbackVal").removeClass("errfeedbackVal");
         }
 
         if (firstNameVal == "") {
@@ -101,3 +102,8 @@ function saveInterconFeedback() {
 
     });
 }
+jQuery( "document" ).ready(function() {
+	jQuery("#feedbackVal").val("");
+	jQuery( "#feedbackVal" ).focus();
+    
+});

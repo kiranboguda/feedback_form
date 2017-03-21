@@ -4,7 +4,7 @@
 .boxHolder1 {padding:20px 40px 20px 40px;}
 .imgHolder {height:845px;}
 #test1table_length, #test1table_filter {display:none !important;}
-
+.errfeedbackVal{ border-color:#e71d32 !important; }
 @media (min-width : 320px) and (max-width : 579px) {	
 	.formHolder1 p {width:100%}
 	.boxHolder1 {padding:20px;}
